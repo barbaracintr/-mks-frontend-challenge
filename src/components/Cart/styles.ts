@@ -5,19 +5,11 @@ export const CartBox = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
     background: #0F52BA;
     overflow: hidden;
-
-    @media only screen and (max-width: 600px) {
-        justify-content: space-between;
-        overflow: auto;
-    }
-    @media screen and (min-width: 700px) and (max-width: 1240px) {       
-        height: 100%;
-    }
 `;
 export const ProductList = styled.ul`
     height: 60vh;
@@ -32,7 +24,7 @@ export const Title = styled.h2`
     font-size: 25px;
     line-height: 33px;
     color: #FFFFFF;
-    padding: 15px;
+    margin: 2rem;
 `;
 export const ButtonFinish = styled.button`
     height: 97px;
@@ -44,4 +36,3 @@ export const ButtonFinish = styled.button`
     font-size: 25px;
     border: none;
 `;
-

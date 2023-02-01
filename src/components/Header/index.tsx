@@ -1,11 +1,9 @@
 import { HearderBox, Logo, Title, ButtonCart } from "./styles";
-import { useProSidebar } from 'react-pro-sidebar';
 import { useState } from 'react';
-import { SidebarBox } from "../SidebarBox";
+import { Sidebar } from "../Sidebar";
 
 export const Header: React.FC = () => {
 
-  const { collapseSidebar } = useProSidebar();
   const [open, setOpen] = useState(false);
 
   function openCart() {
@@ -14,8 +12,6 @@ export const Header: React.FC = () => {
     } else {
       setOpen(false)
     }
-
-    collapseSidebar()
   };
 
   return (
@@ -26,9 +22,9 @@ export const Header: React.FC = () => {
       </Logo>
 
       {open ?
-        <SidebarBox openCart={openCart} />
+        <Sidebar openCart={openCart} />
         :
-        <ButtonCart primary onClick={openCart}>
+        <ButtonCart onClick={openCart}>
           <span className="material-symbols-outlined">
             shopping_cart
           </span>

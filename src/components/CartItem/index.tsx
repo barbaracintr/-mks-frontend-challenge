@@ -1,4 +1,4 @@
-import { ProductItem, Name, BoxBtn, BtnAddLess, Qtd, Price, BtnRemoveProduct } from "./styles";
+import { ProductItem, Img, Name, BoxBtn, BtnAddLess, Qtd, Price, BtnRemoveProduct } from "./styles";
 import { useDispatch } from 'react-redux';
 import { incrementQuantity, decrementQuantity, removeItem } from '../../store/reducers/cart';
 
@@ -8,17 +8,19 @@ export const CartItem = ({ productItem }: any) => {
 
   return (
     <ProductItem>
-      <img src={productItem?.photo} />
+      <Img src={productItem?.photo} />
       <Name>{productItem?.name}</Name>
 
       <BoxBtn>
         <BtnAddLess
-          onClick={() => dispatch(decrementQuantity(productItem.id))}>
+          onClick={() =>
+            dispatch(decrementQuantity(productItem.id))}>
           -
         </BtnAddLess>
         <Qtd>{productItem.quantity}</Qtd>
         <BtnAddLess
-          onClick={() => dispatch(incrementQuantity(productItem.id))}>
+          onClick={() =>
+            dispatch(incrementQuantity(productItem.id))}>
           +
         </BtnAddLess>
       </BoxBtn>

@@ -6,7 +6,7 @@ import { Shimmer } from "../Shimmer";
 import { Header } from "../Header";
 
 export const Home: React.FC = () => {
-  
+
   const { data, isError, isLoading } = useGetQuery("products");
 
   return (

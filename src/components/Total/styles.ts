@@ -6,5 +6,4 @@ export const TotalBox = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: 15px;
-    padding: 5px;
 `;

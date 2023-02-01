@@ -9,13 +9,12 @@ export const HearderBox = styled.header`
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
     background: #0F52BA;
 `;
 export const Logo = styled.h1`
     color: #FFFFFF;
-    margin: 1rem;
 `;
 export const Title = styled.span<StyledProps>`
     font-size: 20px;
@@ -31,17 +30,10 @@ export const Title = styled.span<StyledProps>`
         letter-spacing: 0px;
     `}
 `;
-export const ButtonCart = styled.button<StyledProps>`
-    width: 1vw;
-    background: none;
+export const ButtonCart = styled.button`
     box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.13);
     border: none;
-
-  ${props => props.primary && css`
     width: 90px;
     height: 45px;
-    background: #FFFFFF;
     border-radius: 8px;
-    margin: 1rem;
-  `}
 `;

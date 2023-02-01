@@ -4747,13 +4747,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "classnames@npm:2.3.2"
-  checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
-  languageName: node
-  linkType: hard
-
 "clean-css@npm:^5.2.2":
   version: 5.3.2
   resolution: "clean-css@npm:5.3.2"
@@ -9490,7 +9483,6 @@ __metadata:
     material-ui: ^0.20.2
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-pro-sidebar: ^1.0.0
     react-redux: ^8.0.5
     react-router-dom: ^6.8.0
     react-scripts: 5.0.1
@@ -11299,21 +11291,6 @@ __metadata:
   version: 18.2.0
   resolution: "react-is@npm:18.2.0"
   checksum: e72d0ba81b5922759e4aff17e0252bd29988f9642ed817f56b25a3e217e13eea8a7f2322af99a06edb779da12d5d636e9fda473d620df9a3da0df2a74141d53e
-  languageName: node
-  linkType: hard
-
-"react-pro-sidebar@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "react-pro-sidebar@npm:1.0.0"
-  dependencies:
-    "@emotion/react": ^11.10.5
-    "@emotion/styled": ^11.10.5
-    "@popperjs/core": ^2.11.6
-    classnames: ^2.3.2
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: a98dffd1f78f1c91cb713bdbff87b4dbb3c4dbd88eb425852eae777e7e5226c822fad6a4e8bec6c5484f915dcda90d96ae3ebc065a8d3513664c660aadfd94e5
   languageName: node
   linkType: hard
 
