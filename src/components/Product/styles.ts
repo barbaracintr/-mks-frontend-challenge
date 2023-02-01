@@ -19,11 +19,6 @@ export const Item = styled.li`
         height: 138px;
         width: 111px;
     }
-
-    @media only screen and (max-width: 600px) {
-        height: 285px;
-        width: 217px;
-    }
 `;
 export const Box = styled.div`
     display: flex;

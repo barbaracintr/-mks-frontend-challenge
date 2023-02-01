@@ -1,10 +1,10 @@
 import { ProductItem, Name, BoxBtn, BtnAddLess, Qtd, Price, BtnRemoveProduct } from "./styles";
 import { useDispatch } from 'react-redux';
-import { incrementQuantity, decrementQuantity, removeItem } from '../../store/reducers/cart'
+import { incrementQuantity, decrementQuantity, removeItem } from '../../store/reducers/cart';
 
 export const CartItem = ({ productItem }: any) => {
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <ProductItem>

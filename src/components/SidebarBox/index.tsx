@@ -7,14 +7,14 @@ export const SidebarBox = ({ openCart }: any) => {
     return (
         <Box>
             <Sidebar
-                width={"460px"}
+                width={"600px"}
+                backgroundColor={"#0F52BA"}
             >
                 <div>
                     <ButtonCart
-                        primary={false}
                         onClick={openCart}>
                         <span className="material-symbols-outlined">
-                            keyboard_double_arrow_right
+                            cancel
                         </span>
                     </ButtonCart>
                     <Cart />

@@ -1,9 +1,9 @@
-import { useSelector } from 'react-redux'
-import { TotalBox } from './styles'
+import { useSelector } from 'react-redux';
+import { TotalBox } from './styles';
 
 export const Total: React.FC = () => {
 
-  const cart = useSelector((state: any) => state.cart.cart)
+  const cart = useSelector((state: any) => state.cart.cart);
 
   const getTotal = () => {
     let totalQuantity = 0
@@ -13,7 +13,7 @@ export const Total: React.FC = () => {
       totalPrice += item.price * item.quantity
     })
     return { totalPrice, totalQuantity }
-  }
+  };
 
   return (
     <TotalBox>

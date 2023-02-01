@@ -1,10 +1,10 @@
 import { Item, Box, Name, Price, Description, ButtonBuy } from "./styles";
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 import { addToCart } from "../../store/reducers/cart";
 
 export const Product = ({ productProps }: any) => {
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <Item id={productProps.id} >

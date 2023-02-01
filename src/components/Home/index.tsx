@@ -6,6 +6,7 @@ import { Shimmer } from "../Shimmer";
 import { Header } from "../Header";
 
 export const Home: React.FC = () => {
+  
   const { data, isError, isLoading } = useGetPokemonByNameQuery("bulbasaur");
 
   return (
@@ -25,5 +26,5 @@ export const Home: React.FC = () => {
         : null
       }
     </>
-  )
+  );
 };

@@ -11,10 +11,6 @@ export const ProductItem = styled.li`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-    // overflow: hidden;
-    // overflow: hidden hidden hidden normal;
-    // gap: 5px;
-    // margin: 0 auto;
     width: 320px;
     
     img {
@@ -44,7 +40,7 @@ export const Name = styled.span`
     height: 33px;
     width: 113px;
 `;
-export const BoxBtn = styled.button`
+export const BoxBtn = styled.div`
 `;
 export const BtnAddLess = styled.button`
     border: none;

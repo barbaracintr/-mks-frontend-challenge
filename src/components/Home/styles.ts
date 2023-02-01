@@ -6,6 +6,15 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+    
+    @media only screen and (max-width: 600px) {
+        height: 100%;
+    }
+    @media screen and (min-width: 700px) and (max-width: 1240px) {
+        height: 100%;
+        overflow: hidden;
+    }
 `;
 export const Text = styled.p`
     text-align: center;

@@ -12,33 +12,10 @@ export const HearderBox = styled.header`
     justify-content: space-between;
     align-content: center;
     background: #0F52BA;
-
-    // div {
-    //     display: flex;
-    //     border-radius: 10px 0 0 10px;
-    // }
-
-    @media only screen and (max-width: 600px) {
-    }
-    @media screen and (min-width: 700px) and (max-width: 1240px) {
-    }
-`;
-export const Box = styled.div`
-    min-height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
-    background: #0F52BA;
-    display: flex;
-    border-radius: 10px 0 0 10px;
 `;
 export const Logo = styled.h1`
     color: #FFFFFF;
     margin: 1rem;
-
-    @media only screen and (max-width: 600px) {
-    }
-    @media screen and (min-width: 700px) and (max-width: 1240px) {
-    }
 `;
 export const Title = styled.span<StyledProps>`
     font-size: 20px;
@@ -66,10 +43,5 @@ export const ButtonCart = styled.button<StyledProps>`
     background: #FFFFFF;
     border-radius: 8px;
     margin: 1rem;
-
-    @media only screen and (max-width: 600px) {
-    }
-    @media screen and (min-width: 700px) and (max-width: 1240px) {
-    }
   `}
 `;
