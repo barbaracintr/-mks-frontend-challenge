@@ -1,10 +1,10 @@
-import { useGetPokemonByNameQuery } from "../../store/reducers/products";
+import { useGetQuery } from "../../store/reducers/products";
 import { Product } from "../Product";
 import { BoxProductList, List } from "./styles";
 
 export const Products: React.FC = () => {
 
-  const { data } = useGetPokemonByNameQuery("bulbasaur");
+  const { data } = useGetQuery("products");
 
   return (
     <BoxProductList>

@@ -4,12 +4,12 @@ export const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://mks-challenge-api-frontend.herokuapp.com/api/v1'
   }),
-  reducerPath: 'pokemonApi',
+  reducerPath: 'productsApi',
   endpoints: (build) => ({
-    getPokemonByName: build.query({
+    get: build.query({
       query: () => '/products?page=1&rows=10&sortBy=id&orderBy=DESC',
     }),
   }),
 })
 
-export const { useGetPokemonByNameQuery } = api
+export const { useGetQuery } = api

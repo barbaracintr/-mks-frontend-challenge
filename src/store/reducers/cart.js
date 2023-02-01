@@ -8,10 +8,8 @@ const cartSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const itemInCart = state.cart.find((item) => item.id === action.payload.id);
-      console.log(itemInCart)
       if (itemInCart) {
         itemInCart.quantity++;
-        console.log('Adicionou produto no carrinho')
       } else {
         state.cart.push({ ...action.payload, quantity: 1 });
       }
