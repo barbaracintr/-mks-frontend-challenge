@@ -17,6 +17,7 @@ export const List = styled.ul`
     align-content: center;
     width: 60%;
     gap: 10px;
+    margin: 0.5rem;
 
     @media only screen and (max-width: 600px) {
         margin: 10px;

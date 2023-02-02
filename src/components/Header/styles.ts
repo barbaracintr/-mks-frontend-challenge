@@ -9,9 +9,10 @@ export const HearderBox = styled.header`
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: #0F52BA;
+    padding: 1rem;
 `;
 export const Logo = styled.h1`
     color: #FFFFFF;
