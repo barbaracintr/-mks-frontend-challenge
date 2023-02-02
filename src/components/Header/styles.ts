@@ -37,4 +37,10 @@ export const ButtonCart = styled.button`
     width: 90px;
     height: 45px;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
 `;

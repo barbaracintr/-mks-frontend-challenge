@@ -1,10 +1,12 @@
 import { HearderBox, Logo, Title, ButtonCart } from "./styles";
 import { useState } from 'react';
 import { Sidebar } from "../Sidebar";
+import { useSelector } from "react-redux";
 
 export const Header: React.FC = () => {
 
-  const [open, setOpen] = useState(false);
+  const cart = useSelector((state: any) => state.cart.cart);
+  const [open, setOpen] = useState<boolean>(false);
 
   function openCart() {
     if (!open) {
@@ -12,6 +14,14 @@ export const Header: React.FC = () => {
     } else {
       setOpen(false)
     }
+  };
+
+  const getTotal = () => {
+    let totalQuantity = 0
+    cart.forEach((item: any) => {
+      totalQuantity += item.quantity
+    })
+    return { totalQuantity }
   };
 
   return (
@@ -28,7 +38,9 @@ export const Header: React.FC = () => {
           <span className="material-symbols-outlined">
             shopping_cart
           </span>
-        </ButtonCart>}
+          <span>{getTotal().totalQuantity}</span>
+        </ButtonCart>
+      }
     </HearderBox>
   );
 };

@@ -10,9 +10,11 @@ export const ProductItem = styled.li`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    width: 379px;
     
     @media only screen and (max-width: 600px) {
         gap: 0.2rem;
+        width: 250px;
     } 
     @media only screen and (max-width: 600px) {
         flex-direction: column;
@@ -28,7 +30,7 @@ export const Img = styled.img`
         width: 80px;
         border-radius: 0px;
     } 
-`
+`;
 export const Name = styled.span`
     font-size: 12px;
     font-weight: 400;

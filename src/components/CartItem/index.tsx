@@ -7,7 +7,7 @@ export const CartItem = ({ productItem }: any) => {
   const dispatch = useDispatch();
 
   return (
-    <ProductItem>
+    <ProductItem id={`item${productItem.id}`}>
       <Img src={productItem?.photo} />
       <Name>{productItem?.name}</Name>
 
